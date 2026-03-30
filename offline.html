@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline | Silver Billing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080808;
+      --accent: #c0c0c0;
+      --text: #f0e6d3;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .icon {
+      font-size: 64px;
+      margin-bottom: 20px;
+      color: var(--accent);
+      filter: drop-shadow(0 0 10px rgba(192, 192, 192, 0.3));
+    }
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 32px;
+      letter-spacing: 0.1em;
+      margin: 0 0 10px;
+    }
+    p {
+      color: #9e907a;
+      max-width: 300px;
+      line-height: 1.6;
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #c0c0c0, #a9a9a9);
+      color: #080808;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: transform 0.2s;
+    }
+    .btn:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <div class="icon">○</div>
+  <h1>Offline Mode</h1>
+  <p>You are currently disconnected, but don't worry—Silver Billing is designed for offline use. Any bills created will be saved locally and synced when you're back online.</p>
+  <a href="/" class="btn">Return to App</a>
+</body>
+</html>
