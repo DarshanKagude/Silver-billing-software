@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline | Silver Billing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <style>
+    /* Only keyframes cannot be inlined */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  </style>
+</head>
+<body style="
+  background: #080808;
+  color: #f0e6d3;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+">
+
+  <!-- Icon -->
+  <div style="
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #c0c0c0;
+    filter: drop-shadow(0 0 10px rgba(192,192,192,0.3));
+    line-height: 1;
+  ">○</div>
+
+  <!-- Heading -->
+  <h1 style="
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    margin: 0 0 10px;
+    color: #f0e6d3;
+  ">Offline Mode</h1>
+
+  <!-- Description -->
+  <p style="
+    color: #9e907a;
+    max-width: 300px;
+    line-height: 1.6;
+    font-size: 14px;
+  ">You are currently disconnected, but don't worry — Silver Billing is designed for offline use. Any bills created will be saved locally and synced when you're back online.</p>
+
+  <!-- Return button -->
+  <a href="/" style="
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #c0c0c0, #a9a9a9);
+    color: #080808;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    box-shadow: 0 4px 15px rgba(192,192,192,0.2);
+    transition: transform 0.2s;
+  " onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='scale(1)'">
+    Return to App
+  </a>
+
+  <!-- Optional spinner to show activity -->
+  <div style="
+    margin-top: 40px;
+    width: 24px; height: 24px;
+    border: 2px solid rgba(192,192,192,0.15);
+    border-top-color: #c0c0c0;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+    opacity: 0.5;
+  "></div>
+
+</body>
+</html>
